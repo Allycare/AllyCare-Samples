@@ -1,16 +1,13 @@
-# flutter_sample
+## iOS Camera Permission Setup
 
-A new Flutter project.
+To enable camera functionality in this project, you need to add the necessary permissions in the `Info.plist` file. Follow these steps:
 
-## Getting Started
+1. Open your Xcode project.
+2. Navigate to the **Info.plist** file.
+3. Add the following key-value pair to request camera access from users:
 
-This project is a starting point for a Flutter application.
+   ```xml
+   <key>NSCameraUsageDescription</key>
+   <string>This app requires access to the camera for capturing images and videos.</string>
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Failing to include this permission will result in the app being unable to access the camera, leading to potential crashes or limited functionality.
