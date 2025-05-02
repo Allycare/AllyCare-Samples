@@ -3,7 +3,7 @@
     "name": "rn-webview",
     "slug": "rn-webview",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
@@ -12,12 +12,16 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.anonymous.rnwebview"
     },
+    "platforms": [
+      "android"
+    ],
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.anonymous.rnwebview"
+      "package": "com.anonymous.rnwebview",
+      "versionCode": 1
     },
     "web": {
       "bundler": "metro",
@@ -38,6 +42,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "ee410b77-ebb4-404b-b88c-90fb86f310bc"
+      }
     }
   }
 }

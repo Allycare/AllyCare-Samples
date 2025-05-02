@@ -8,7 +8,7 @@ export default function TabTwoScreen() {
       <WebView
         style={{ flex: 1 ,marginBottom:40,}}
         source={{
-          uri: 'https://allycare-app.rootally.com/',
+          uri: 'https://app.alyve.health/',
         }}
         allowsInlineMediaPlayback
         javaScriptEnabled={true}

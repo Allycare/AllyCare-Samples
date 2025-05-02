@@ -43,13 +43,34 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: InAppWebView(
         initialUrlRequest: URLRequest(
-          url: WebUri('https://allycare-app.rootally.com/'),
+          url: WebUri('https://rootallyai.web.app/'),
         ),
         initialSettings: InAppWebViewSettings(
           mediaPlaybackRequiresUserGesture: false,
           allowsInlineMediaPlayback: true,
           iframeAllow: 'camera *',
         ),
+        onWebViewCreated: (controller){
+
+          controller.addJavaScriptHandler(
+            handlerName: "myFlutterHandler",
+            callback: (args) {
+              print("KDEBUG:: Received from JS from Handler: $args");
+              return {"status": "received"};
+            },
+          );
+
+          controller.addWebMessageListener(WebMessageListener(
+            jsObjectName: "camPermDeniedListener", // Name used in JS
+            onPostMessage: (message, sourceOrigin, isMainFrame, replyProxy) {
+              camPermissionDenied();
+            },
+            allowedOriginRules: {"*"}, // You can restrict origins if needed
+          ));
+        },
+        onConsoleMessage: (controller, consoleMessage) {
+          print("KDEBUG:: CONSOLE MESSAGE:: ${consoleMessage.message}");
+        },
         onPermissionRequest: (controller, request) async {
           final resources = <PermissionResourceType>[];
           if (request.resources.contains(PermissionResourceType.CAMERA)) {
@@ -83,5 +104,9 @@ class _MyHomePageState extends State<MyHomePage> {
         },
       ),
     );
+  }
+
+  void camPermissionDenied() {
+    print("KDEBUG:: CAMERA PERMISSION DENIED");
   }
 }
