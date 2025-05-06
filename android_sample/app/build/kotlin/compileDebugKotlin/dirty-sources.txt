@@ -1,0 +1,5 @@
+/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/java/com/example/allycaresample/ui/theme/Color.kt
+/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/java/com/example/allycaresample/ui/theme/Type.kt
+/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/java/com/example/allycaresample/ui/theme/Theme.kt
+/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/java/com/example/allycaresample/ui/theme/Shape.kt
+/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/java/com/example/allycaresample/MainActivity.kt

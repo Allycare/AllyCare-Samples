@@ -32,10 +32,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
@@ -43,31 +41,14 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: InAppWebView(
         initialUrlRequest: URLRequest(
-          url: WebUri('https://rootallyai.web.app/'),
+          url: WebUri(
+              'https://allycare-app.rootally.com/?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiItT1A5LTF3NHpHN3RxQ0JPeTRzNyIsImhvc3BpdGFsSWQiOiJrWmswRWV2TEIyUlZDOWpQbkkzUk16MDVPQ1gyIiwiZW1haWwiOiJkZWJtYWx5YUByb290YWxseS5jb20iLCJ1c2VybmFtZSI6IkRlYm1hbHlhIiwiYWdlIjowLCJjcmVhdGlvblRpbWVzdGFtcCI6MTc0NjUxMzgxODk2NCwiYXV0b1NpZ25JbiI6dHJ1ZSwiaW9zX2RlZXB2aWV3IjpmYWxzZSwicGxhdGZvcm0iOiJ3ZWJiIiwiaW9zX3Bhc3NpdmVfZGVlcHZpZXciOmZhbHNlLCIkZmFsbGJhY2tfdXJsIjoiaHR0cHM6Ly9hbGx5Y2FyZS1hcHAucm9vdGFsbHkuY29tLyIsIiR3ZWJfb25seSI6dHJ1ZSwiY29tcG9uZW50SWRzIjpbImFzX2ZzXzAxIl0sInNob3dPbmx5QXNzZXNzbWVudEV4ZXJjaXNlcyI6dHJ1ZSwicmVkaXJlY3Rpb25MaW5rIjpudWxsLCJhZGRpdGlvbmFsUGF5bG9hZCI6e30sInRva2VuSWQiOiIzZDIzOTM5MC1lNzllLTQ2NTQtOTQwMS01MjFkNzE5ZDBhNzIiLCJ0b2tlblVzZXJJZCI6Ii1PUDktMXc0ekc3dHFDQk95NHM3IiwiaWF0IjoxNzQ2NTEzODE4LCJleHAiOjE3NDY2MDAyMTh9.U-Ki6Dk73juf2uAIArRTq3baHBmuhtXeifl1u6AY_kM'),
         ),
         initialSettings: InAppWebViewSettings(
           mediaPlaybackRequiresUserGesture: false,
           allowsInlineMediaPlayback: true,
           iframeAllow: 'camera *',
         ),
-        onWebViewCreated: (controller){
-
-          controller.addJavaScriptHandler(
-            handlerName: "myFlutterHandler",
-            callback: (args) {
-              print("KDEBUG:: Received from JS from Handler: $args");
-              return {"status": "received"};
-            },
-          );
-
-          controller.addWebMessageListener(WebMessageListener(
-            jsObjectName: "camPermDeniedListener", // Name used in JS
-            onPostMessage: (message, sourceOrigin, isMainFrame, replyProxy) {
-              camPermissionDenied();
-            },
-            allowedOriginRules: {"*"}, // You can restrict origins if needed
-          ));
-        },
         onConsoleMessage: (controller, consoleMessage) {
           print("KDEBUG:: CONSOLE MESSAGE:: ${consoleMessage.message}");
         },
@@ -79,8 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
               resources.add(PermissionResourceType.CAMERA);
             }
           }
-          if (request.resources
-              .contains(PermissionResourceType.MICROPHONE)) {
+          if (request.resources.contains(PermissionResourceType.MICROPHONE)) {
             final microphoneStatus = await Permission.microphone.request();
             if (!microphoneStatus.isDenied) {
               resources.add(PermissionResourceType.MICROPHONE);

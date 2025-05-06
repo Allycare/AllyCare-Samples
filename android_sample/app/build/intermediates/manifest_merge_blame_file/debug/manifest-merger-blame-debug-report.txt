@@ -1,0 +1,150 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.allycaresample"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:6:5-67
+11-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:7:5-65
+12-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:7:22-62
+13    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+13-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:8:5-71
+13-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:8:22-68
+14
+15    <application
+15-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:10:5-41:19
+16        android:allowBackup="true"
+16-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:11:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.8.0-rc01] /Users/debmalyasarkar/.gradle/caches/transforms-3/d4174aaab0a1eb1d9a237f1257ed82dc/transformed/core-1.8.0-rc01/AndroidManifest.xml:24:18-86
+18        android:dataExtractionRules="@xml/data_extraction_rules"
+18-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:12:9-65
+19        android:debuggable="true"
+20        android:fullBackupContent="@xml/backup_rules"
+20-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:13:9-54
+21        android:hardwareAccelerated="true"
+21-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:19:9-43
+22        android:icon="@mipmap/ic_launcher"
+22-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:14:9-43
+23        android:label="@string/app_name"
+23-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:15:9-41
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:16:9-54
+25        android:supportsRtl="true"
+25-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:17:9-35
+26        android:testOnly="true"
+27        android:theme="@style/Theme.AllycareSample"
+27-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:20:9-52
+28        android:usesCleartextTraffic="true" >
+28-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:18:9-44
+29
+30        <!-- Main Activity -->
+31        <activity
+31-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:24:9-32:20
+32            android:name="com.example.allycaresample.MainActivity"
+32-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:25:13-41
+33            android:exported="true"
+33-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:26:13-36
+34            android:theme="@style/Theme.AllycareSample.AppCompat" >
+34-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:27:13-66
+35            <intent-filter>
+35-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:28:13-31:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:29:17-69
+36-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:29:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:30:17-77
+38-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:30:27-74
+39            </intent-filter>
+40        </activity>
+41
+42        <!-- WebView Activity -->
+43        <activity
+43-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:35:9-39:69
+44            android:name="com.example.allycaresample.WebViewActivity"
+44-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:36:13-44
+45            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+45-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:38:13-87
+46            android:exported="false"
+46-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:37:13-37
+47            android:theme="@style/Theme.AllycareSample.AppCompat" />
+47-->/Users/debmalyasarkar/StudioProjects/AllycareSamples/android_sample/app/src/main/AndroidManifest.xml:39:13-66
+48        <activity
+48-->[androidx.compose.ui:ui-tooling:1.1.0-beta01] /Users/debmalyasarkar/.gradle/caches/transforms-3/097cc3940576f96c4e806bda6402a8ed/transformed/ui-tooling-1.1.0-beta01/AndroidManifest.xml:25:9-27:39
+49            android:name="androidx.compose.ui.tooling.PreviewActivity"
+49-->[androidx.compose.ui:ui-tooling:1.1.0-beta01] /Users/debmalyasarkar/.gradle/caches/transforms-3/097cc3940576f96c4e806bda6402a8ed/transformed/ui-tooling-1.1.0-beta01/AndroidManifest.xml:26:13-71
+50            android:exported="true" />
+50-->[androidx.compose.ui:ui-tooling:1.1.0-beta01] /Users/debmalyasarkar/.gradle/caches/transforms-3/097cc3940576f96c4e806bda6402a8ed/transformed/ui-tooling-1.1.0-beta01/AndroidManifest.xml:27:13-36
+51        <activity
+51-->[androidx.compose.ui:ui-test-manifest:1.1.0-beta01] /Users/debmalyasarkar/.gradle/caches/transforms-3/7f3716b978e22b2843ed77f32885c287/transformed/ui-test-manifest-1.1.0-beta01/AndroidManifest.xml:25:9-27:39
+52            android:name="androidx.activity.ComponentActivity"
+52-->[androidx.compose.ui:ui-test-manifest:1.1.0-beta01] /Users/debmalyasarkar/.gradle/caches/transforms-3/7f3716b978e22b2843ed77f32885c287/transformed/ui-test-manifest-1.1.0-beta01/AndroidManifest.xml:26:13-63
+53            android:exported="true" />
+53-->[androidx.compose.ui:ui-test-manifest:1.1.0-beta01] /Users/debmalyasarkar/.gradle/caches/transforms-3/7f3716b978e22b2843ed77f32885c287/transformed/ui-test-manifest-1.1.0-beta01/AndroidManifest.xml:27:13-36
+54
+55        <provider
+55-->[androidx.emoji2:emoji2:1.0.0] /Users/debmalyasarkar/.gradle/caches/transforms-3/f4008037e9546e3ba7df0a3172bfde3f/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+56            android:name="androidx.startup.InitializationProvider"
+56-->[androidx.emoji2:emoji2:1.0.0] /Users/debmalyasarkar/.gradle/caches/transforms-3/f4008037e9546e3ba7df0a3172bfde3f/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
+57            android:authorities="com.example.allycaresample.androidx-startup"
+57-->[androidx.emoji2:emoji2:1.0.0] /Users/debmalyasarkar/.gradle/caches/transforms-3/f4008037e9546e3ba7df0a3172bfde3f/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
+58            android:exported="false" >
+58-->[androidx.emoji2:emoji2:1.0.0] /Users/debmalyasarkar/.gradle/caches/transforms-3/f4008037e9546e3ba7df0a3172bfde3f/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
+59            <meta-data
+59-->[androidx.emoji2:emoji2:1.0.0] /Users/debmalyasarkar/.gradle/caches/transforms-3/f4008037e9546e3ba7df0a3172bfde3f/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+60                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+60-->[androidx.emoji2:emoji2:1.0.0] /Users/debmalyasarkar/.gradle/caches/transforms-3/f4008037e9546e3ba7df0a3172bfde3f/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
+61                android:value="androidx.startup" />
+61-->[androidx.emoji2:emoji2:1.0.0] /Users/debmalyasarkar/.gradle/caches/transforms-3/f4008037e9546e3ba7df0a3172bfde3f/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
+62            <meta-data
+62-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/debmalyasarkar/.gradle/caches/transforms-3/eec2899a36d34a82a499c7aeb0eacde7/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+63                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+63-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/debmalyasarkar/.gradle/caches/transforms-3/eec2899a36d34a82a499c7aeb0eacde7/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+64                android:value="androidx.startup" />
+64-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/debmalyasarkar/.gradle/caches/transforms-3/eec2899a36d34a82a499c7aeb0eacde7/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+65            <meta-data
+65-->[androidx.profileinstaller:profileinstaller:1.2.0-rc01] /Users/debmalyasarkar/.gradle/caches/transforms-3/55550830390ac6209e6b1aa75b718e0f/transformed/profileinstaller-1.2.0-rc01/AndroidManifest.xml:30:13-32:52
+66                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+66-->[androidx.profileinstaller:profileinstaller:1.2.0-rc01] /Users/debmalyasarkar/.gradle/caches/transforms-3/55550830390ac6209e6b1aa75b718e0f/transformed/profileinstaller-1.2.0-rc01/AndroidManifest.xml:31:17-85
+67                android:value="androidx.startup" />
+67-->[androidx.profileinstaller:profileinstaller:1.2.0-rc01] /Users/debmalyasarkar/.gradle/caches/transforms-3/55550830390ac6209e6b1aa75b718e0f/transformed/profileinstaller-1.2.0-rc01/AndroidManifest.xml:32:17-49
+68        </provider>
+69
+70        <receiver
+70-->[androidx.profileinstaller:profileinstaller:1.2.0-rc01] /Users/debmalyasarkar/.gradle/caches/transforms-3/55550830390ac6209e6b1aa75b718e0f/transformed/profileinstaller-1.2.0-rc01/AndroidManifest.xml:35:9-47:20
+71            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+71-->[androidx.profileinstaller:profileinstaller:1.2.0-rc01] /Users/debmalyasarkar/.gradle/caches/transforms-3/55550830390ac6209e6b1aa75b718e0f/transformed/profileinstaller-1.2.0-rc01/AndroidManifest.xml:36:13-76
+72            android:directBootAware="false"
+72-->[androidx.profileinstaller:profileinstaller:1.2.0-rc01] /Users/debmalyasarkar/.gradle/caches/transforms-3/55550830390ac6209e6b1aa75b718e0f/transformed/profileinstaller-1.2.0-rc01/AndroidManifest.xml:37:13-44
+73            android:enabled="true"
+73-->[androidx.profileinstaller:profileinstaller:1.2.0-rc01] /Users/debmalyasarkar/.gradle/caches/transforms-3/55550830390ac6209e6b1aa75b718e0f/transformed/profileinstaller-1.2.0-rc01/AndroidManifest.xml:38:13-35
+74            android:exported="true"
+74-->[androidx.profileinstaller:profileinstaller:1.2.0-rc01] /Users/debmalyasarkar/.gradle/caches/transforms-3/55550830390ac6209e6b1aa75b718e0f/transformed/profileinstaller-1.2.0-rc01/AndroidManifest.xml:39:13-36
+75            android:permission="android.permission.DUMP" >
+75-->[androidx.profileinstaller:profileinstaller:1.2.0-rc01] /Users/debmalyasarkar/.gradle/caches/transforms-3/55550830390ac6209e6b1aa75b718e0f/transformed/profileinstaller-1.2.0-rc01/AndroidManifest.xml:40:13-57
+76            <intent-filter>
+76-->[androidx.profileinstaller:profileinstaller:1.2.0-rc01] /Users/debmalyasarkar/.gradle/caches/transforms-3/55550830390ac6209e6b1aa75b718e0f/transformed/profileinstaller-1.2.0-rc01/AndroidManifest.xml:41:13-43:29
+77                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+77-->[androidx.profileinstaller:profileinstaller:1.2.0-rc01] /Users/debmalyasarkar/.gradle/caches/transforms-3/55550830390ac6209e6b1aa75b718e0f/transformed/profileinstaller-1.2.0-rc01/AndroidManifest.xml:42:17-91
+77-->[androidx.profileinstaller:profileinstaller:1.2.0-rc01] /Users/debmalyasarkar/.gradle/caches/transforms-3/55550830390ac6209e6b1aa75b718e0f/transformed/profileinstaller-1.2.0-rc01/AndroidManifest.xml:42:25-88
+78            </intent-filter>
+79            <intent-filter>
+79-->[androidx.profileinstaller:profileinstaller:1.2.0-rc01] /Users/debmalyasarkar/.gradle/caches/transforms-3/55550830390ac6209e6b1aa75b718e0f/transformed/profileinstaller-1.2.0-rc01/AndroidManifest.xml:44:13-46:29
+80                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+80-->[androidx.profileinstaller:profileinstaller:1.2.0-rc01] /Users/debmalyasarkar/.gradle/caches/transforms-3/55550830390ac6209e6b1aa75b718e0f/transformed/profileinstaller-1.2.0-rc01/AndroidManifest.xml:45:17-85
+80-->[androidx.profileinstaller:profileinstaller:1.2.0-rc01] /Users/debmalyasarkar/.gradle/caches/transforms-3/55550830390ac6209e6b1aa75b718e0f/transformed/profileinstaller-1.2.0-rc01/AndroidManifest.xml:45:25-82
+81            </intent-filter>
+82        </receiver>
+83    </application>
+84
+85</manifest>
